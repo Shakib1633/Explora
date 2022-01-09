@@ -45,26 +45,22 @@
         </div>
         
     </header>
-    <section class="breadcrumbs" style="height: 80px;"><h2 style="text-align: center;"><strong>Do you have an account?</strong></h2><br><br></section>
+    <section class="breadcrumbs" style="height: 80px;"><h2 style="text-align: center;"><strong>Admin Log In</strong></h2><br><br></section>
     <br><br>
 
 
     <main id="main">
         <div class="container body-content" style="padding-left: 100px; padding-right: 100px;">
             <div class="container">
-                <div class="row justify-content-start">
-                    <h2 style="text-align: center;">Log In</h2>
-                </div>
-    
                 <div class="row justify-content-start" style="padding-top:10px;">
                     <div class="col" style="padding-top:10px;">
-                        <label >Username or Phone Number <b style="color: rgb(243, 17, 17);">*</b></label>
+                        <label >Username <b style="color: rgb(243, 17, 17);">*</b></label>
                     </div>
                 </div>
     
                 <div class="row justify-content-start" style="padding-top:10px;">
                     <div class="col" style="padding-top:10px;">
-                        <input class="form-control" placeholder="01874256942"></input>
+                        <input type="email"  class="form-control"  name="email" id="email" placeholder="Admin's User email" required></input>
                     </div>
                 </div>
     
@@ -76,99 +72,24 @@
     
                 <div class="row justify-content-start" style="padding-top:10px;">
                     <div class="col" style="padding-top:10px;">
-                        <input class="form-control"></input>
+                        <input type="password" class="form-control" name="pass" placeholder="Admin's Password" id="pass" required></input>
                     </div>
                 </div>   
                 <div class="row justify-content-end" style="padding-top:10px;">
-                    <button class="btn btn-primary">Log In</button>
+                    <button class="btn btn-primary" type="submit" onclick="log()">Log In</button>
+                    <script>
+                      function log() {
+                        var usermail = document.getElementById("email").value;
+                        var pass = document.getElementById("pass").value;
+                        if (usermail == "sakib" && pass == "60") {
+                          location.replace("admin.html");
+                        }
+                      }
+                    </script>
                 </div>
             </div>
         </div>
     </main><br><br><br>
-
-
-
-
-    <main id="main" >
-        <div class="container body-content" style="padding-left: 100px; padding-right: 100px;">
-            <div class="container">
-    
-                <div class="row justify-content-start" style="padding-top:10px;">
-                  <h2 style="text-align: center;">Sign Up for an account</h2>
-                </div>
-    
-                <div class="row justify-content-start" style="padding-top:10px;">
-                    <div class="col" style="padding-top:10px;">
-                        <label>First Name</label>
-                    </div>
-                    <div class="col" style="padding-top:10px;">
-                        <label>Last Name</label>
-                    </div>
-                </div>
-    
-                <div class="row justify-content-start" style="padding-top:10px;">
-                    <div class="col" style="padding-top:10px;">
-                        <input class="form-control"></input>
-                    </div>
-                    <div class="col" style="padding-top:10px;">
-                        <input class="form-control"></input>
-                    </div>
-                </div>
-                
-                <div class="row justify-content-start" style="padding-top:10px;">
-                    <div class="col" style="padding-top:10px;">
-                        <label>Phone</label>
-                    </div>
-                    <div class="col" style="padding-top:10px;">
-                        <label>Gmail</label>
-                    </div>
-                </div>
-    
-                <div class="row justify-content-start" style="padding-top:10px;">
-                    <div class="col" style="padding-top:10px;">
-                        <input class="form-control"></input>
-                    </div>
-                    <div class="col" style="padding-top:10px;">
-                        <input class="form-control"></input>
-                    </div>
-                </div>
-    
-                <div class="row justify-content-start" style="padding-top:10px;">
-                    <div class="col" style="padding-top:10px;">
-                        <label>Password</label>
-                    </div>
-                    <div class="col" style="padding-top:10px;">
-                        <label>Continue Password</label>
-                    </div>
-                </div>
-    
-                <div class="row justify-content-start" style="padding-top:10px;">
-                    <div class="col" style="padding-top:10px;">
-                        <input class="form-control"></input>
-                    </div>
-                    <div class="col" style="padding-top:10px;">
-                        <input class="form-control"></input>
-                    </div>
-                </div>
-    
-                <div class="row justify-content-center" style="padding-top:10px;">
-                    <label><input type="checkbox" /> I agree to Terms and Conditions</label>
-                </div>
-    
-                <div class="row justify-content-end" style="padding-top:10px;">
-                    <button class="btn btn-primary">Sign In</button>
-                </div>
-    
-            </div>
-        </div>
-        
-    
-    </main><br><br><br>
-
-
-
-    
-
 
     <footer id="footer">
         <div class="footer-top">

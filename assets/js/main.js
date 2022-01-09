@@ -288,7 +288,7 @@
       }
     }
   });
-
+  
   /**
    * Testimonials slider
    */

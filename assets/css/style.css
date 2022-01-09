@@ -558,7 +558,15 @@ section {
     display: inline-block;
   }
 }
-
+/*
+#main>#transp{
+  background-image: url(../img/hqimage.jpg);
+  background-repeat: no-repeat; background-size: cover; position: relative;
+}
+#transp::before{
+  background: rgb(255, 255, 255);
+}
+*/
 /* Featured Services Section
 --------------------------------*/
 #featured-services {
@@ -1893,15 +1901,14 @@ section {
   background: #13a456;
 }
 #footer .copyright {
-  text-align: center;
   padding-top: 30px;
 }
 #footer .credits {
-  text-align: center;
   font-size: 13px;
   color: #ddd;
+  padding-top: 30px;
+  text-align: left;
 }
-
 
 
 

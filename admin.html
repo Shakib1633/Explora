@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>About</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/dp.png" rel="icon">
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+      .outter
+{
+  box-shadow: 0px 2px 15px rgba(10, 10, 10, 0.503);
+  padding: 3%;
+  margin: 2% 0 2% 0 ;
+}
+  </style>
+</head>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyAFvx2YaxQqkAepP9_8pznCOZiLn3gdtXk",
+    authDomain: "comments-8b165.firebaseapp.com",
+    databaseURL: "https://comments-8b165-default-rtdb.firebaseio.com",
+    projectId: "comments-8b165",
+    storageBucket: "comments-8b165.appspot.com",
+    messagingSenderId: "750784650504",
+    appId: "1:750784650504:web:e1b3d72e8e5f14c8c420bd",
+    measurementId: "G-2X6TGBZRVL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="assets/js/comments.js"></script>
+
+<body onload="showComment()" style="background-image: url(assets/img/gradientwhite.jpg); background-repeat: no-repeat; background-size: cover; position: relative;">
+
+    <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent" style="background: rgba(86, 57, 150, 0.9);">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-11 d-flex align-items-center justify-content-between">
+          <h1 class="logo me-auto me-lg-0"><a href="index.html"><img src="assets/img/Explora-removebg-preview.png" class="img-fluid" alt="Responsive image"></a></h1>
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+              <li class="dropdown"><a class="nav-link scrollto" href="portfolio-details.html"><span>Life On Mars</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="portfolio-details.html#main">About Mars</a></li>
+                  <li><a href="portfolio-details.html#mars_update">Research Update</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="nav-link scrollto" href="Article.html"><span>Article</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="Article.html">The Solar System</a></li>
+                  <li><a href="Article.html#tbbt">The Big Bang</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto " href="library.html">Library</a></li>
+              <li class="dropdown"><a class="nav-link scrollto" href="tribute.html"><span>Tribute</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="tribute.html">Astronauts</a></li>
+                  <li><a href="tribute.html#sci">Scientists</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="media.html"><span>Media</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="media.html#chobi">Gallery</a></li>
+                  <li><a href="media.html#cholochitro">Documentaries</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto" href="about.html">About</a></li>
+              <li><a class="nav-link scrollto" href="signup page .html">Log In</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+  <br><br><br>
+
+
+      <main id="main" >
+        <!-- ======= Blog Single Section ======= -->
+        <!-- <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a> -->
+        <section id="blog" class="blog">
+            
+          <div class="container" data-aos="fade-up">
+            <h4 class="comments-count">Comments</h4>
+                <div class="blog-comments"  id="blog-comments">
+    
+                  <div id="comment-1" class="outter" style="display: none;">
+                    <div>
+                        <h4><strong>Georgia Reader</strong></h4>
+                        <p>
+                          Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et. Est ad aut sapiente quis molestiae est qui cum soluta.
+                          Vero aut rerum vel. Rerum quos laboriosam placeat ex qui. Sint qui facilis et.
+                        </p>
+                    </div>
+                  </div><!-- End comment #1 -->
+    
+                </div><!-- End blog comments -->
+    
+          </div>
+        </section><!-- End Blog Single Section -->
+    
+      </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
