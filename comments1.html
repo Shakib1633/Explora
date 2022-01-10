@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Library</title>
+  <title>Reply</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -23,42 +23,37 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
   <style>
-      .card{
-      border-radius: 4px;
-      background: #fff;
-      box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-      padding: 14px 20px 20px 20px;
-      cursor: pointer;
-      }
-
-      .card:hover{
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-      }
-      /* Style buttons */
-      .btn {
-      background-color: DodgerBlue;
-      border: none;
-      color: white;
-      padding: 12px 30px;
-      cursor: pointer;
-      font-size: 20px;
-      }
-
-      /* Darker background on mouse-over */
-      .btn:hover {
-      background-color: RoyalBlue;
-      }
+     .outter
+{
+  box-shadow: 0px 2px 15px rgba(10, 10, 10, 0.503);
+  padding: 3%;
+  margin: 2% 0 2% 0 ;
+}
   </style>
 </head>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyAFvx2YaxQqkAepP9_8pznCOZiLn3gdtXk",
+    authDomain: "comments-8b165.firebaseapp.com",
+    databaseURL: "https://comments-8b165-default-rtdb.firebaseio.com",
+    projectId: "comments-8b165",
+    storageBucket: "comments-8b165.appspot.com",
+    messagingSenderId: "750784650504",
+    appId: "1:750784650504:web:e1b3d72e8e5f14c8c420bd",
+    measurementId: "G-2X6TGBZRVL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="assets/js/comments.js"></script>
 
-<body style="background-image: url(assets/img/books.jfif);">
+<body onload="showComment1()" style="background-image: url(assets/img/gradientwhite.jpg); background-repeat: no-repeat; background-size: cover; position: relative;">
 
     <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent" style="background: rgba(86, 57, 150, 0.9);">
@@ -95,7 +90,6 @@
                 </ul>
               </li>
               <li><a class="nav-link scrollto" href="about.html">About</a></li>
-              <li><a class="nav-link scrollto" href="signup page .html">Log In</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
@@ -104,117 +98,73 @@
 
     </div>
   </header><!-- End Header -->
-    <br><br><br><br><br>
-
-    <div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card card-1" style="background-image: url(assets/img/bookdoodles.jpg); background-repeat: no-repeat; background-size: cover; border-radius: 15px;">
-              <h3 style="text-align: center; color: rgb(255, 247, 0);">The Solar System</h3>
-              <img src="assets/img/SolarSystembook.jpg" alt="" ><br>
-              <a href="assets/Our-Solar-System-Book.pdf" download="">
-                <div>
-                  <button class="btn"><i class="fa fa-download" ></i> Download</button>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card card-1" style="background-image: url(assets/img/bookdoodles.jpg); background-repeat: no-repeat; background-size: cover; border-radius: 15px;">
-              <h3 style="text-align: center; color: rgb(255, 247, 0);">The Solar System</h3>
-              <img src="assets/img/SolarSystembook.jpg" alt="" ><br>
-              <a href="assets/Our-Solar-System-Book.pdf" download="">
-                <div>
-                  <button class="btn"><i class="fa fa-download" ></i> Download</button>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card card-1" style="background-image: url(assets/img/bookdoodles.jpg); background-repeat: no-repeat; background-size: cover; border-radius: 15px;">
-              <h3 style="text-align: center; color: rgb(255, 247, 0);">The Solar System</h3>
-              <img src="assets/img/SolarSystembook.jpg" alt="" ><br>
-              <a href="assets/Our-Solar-System-Book.pdf" download="">
-                <div>
-                  <button class="btn"><i class="fa fa-download" ></i> Download</button>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card card-1" style="background-image: url(assets/img/bookdoodles.jpg); background-repeat: no-repeat; background-size: cover; border-radius: 15px;">
-              <h3 style="text-align: center; color: rgb(255, 247, 0);">The Solar System</h3>
-              <img src="assets/img/SolarSystembook.jpg" alt="" ><br>
-              <a href="assets/Our-Solar-System-Book.pdf" download="">
-                <div>
-                  <a href="assets/Our-Solar-System-Book.pdf" download="">
-                <div>
-                  <button class="btn"><i class="fa fa-download" ></i> Download</button>
-                </div>
-              </a>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div><br><br><br><br>
+  <br><br><br>
   
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card card-1" style="background-image: url(assets/img/bookdoodles.jpg); background-repeat: no-repeat; background-size: cover; border-radius: 15px;">
-              <h3 style="text-align: center; color: rgb(255, 247, 0);">The Solar System</h3>
-              <img src="assets/img/SolarSystembook.jpg" alt="" ><br>
-              <a href="assets/Our-Solar-System-Book.pdf" download="">
-                <div>
-                  <a href="assets/Our-Solar-System-Book.pdf" download="">
-                <div>
-                  <button class="btn"><i class="fa fa-download" ></i> Download</button>
-                </div>
-              </a>
-                </div>
-              </a>
-              
-            </div>
+      <main>
+        <section id="blog" class="blog">
+            
+          <div class="container" data-aos="fade-up">
+            <h4 class="comments-count">Comments</h4>
+                <div class="blog-comments"  id="blog-comments">
+    
+                  <div id="comment-1" class="outter" style="display: none; background-color: white;" >
+                    <div>
+                        <h4 style="color: rgb(6, 101, 124)"><b>Georgia Reader</b></h4>
+                        <p>
+                          Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et. Est ad aut sapiente quis molestiae est qui cum soluta.
+                          Vero aut rerum vel. Rerum quos laboriosam placeat ex qui. Sint qui facilis et.
+                        </p>
+                    </div>
+                  </div><!-- End comment #1 -->
+    
+                </div><!-- End blog comments -->
+    
           </div>
-          <div class="col-md-3">
-            <div class="card card-1" style="background-image: url(assets/img/bookdoodles.jpg); background-repeat: no-repeat; background-size: cover; border-radius: 15px;">
-              <h3 style="text-align: center; color: rgb(255, 247, 0);">The Solar System</h3>
-              <img src="assets/img/SolarSystembook.jpg" alt="" ><br>
-              <a href="assets/Our-Solar-System-Book.pdf" download="">
-                <div>
-                  <button class="btn"><i class="fa fa-download" ></i> Download</button>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card card-1" style="background-image: url(assets/img/bookdoodles.jpg); background-repeat: no-repeat; background-size: cover; border-radius: 15px;">
-              <h3 style="text-align: center; color: rgb(255, 247, 0);">The Solar System</h3>
-              <img src="assets/img/SolarSystembook.jpg" alt="" ><br>
-              <a href="assets/Our-Solar-System-Book.pdf" download="">
-                <div>
-                  <button class="btn"><i class="fa fa-download" ></i> Download</button>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card card-1" style="background-image: url(assets/img/bookdoodles.jpg); background-repeat: no-repeat; background-size: cover; border-radius: 15px;">
-              <h3 style="text-align: center; color: rgb(255, 247, 0);">The Solar System</h3>
-              <img src="assets/img/SolarSystembook.jpg" alt="" ><br>
-              <a href="assets/Our-Solar-System-Book.pdf" download="">
-                <div>
-                  <button class="btn"><i class="fa fa-download" ></i> Download</button>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div><br><br><br><br>
+        </section><!-- End Blog Single Section -->
 
-    </div>
+
+
+        <!-- ======= Blog Single Section ======= -->
+        <section id="blog" class="blog">
+          
+          <div class="container" data-aos="fade-up">
+                <div class="blog-comments">
+                  <div class="reply-form" style="background-color: rgba(160, 122, 181, 0.326);">
+                    <h4>Leave a Reply</h4>
+                    <p>Your email address will not be published. Required fields are marked * </p>
+                    <form action="">
+                      <div class="row">
+                        <div class="col form-group">
+                          <input name="name1" id="name1" type="text" class="form-control" placeholder="Your Name*">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col form-group">
+                          <input name="email1" id="email1" type="text" class="form-control" placeholder="Your Email*">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col form-group">
+                          <textarea name="comment1" id="comment1" class="form-control" placeholder="Your Comment*"></textarea>
+                        </div>
+                      </div>
+                      <button type="button" id="post" class="btn btn-primary" onclick="storecomment1()">Post Comment</button>
+                      
+                    </form>
+    
+                  </div>
+    
+                </div><!-- End blog comments -->
+    
+          </div>
+        </section><!-- End Blog Single Section -->
+    
+      </main><!-- End #main -->
+    
+
+
+
+
 
 
   <!-- ======= Footer ======= -->
@@ -259,12 +209,6 @@
             </div>
 
           </div>
-          
-
-          
-
-
-
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Our Location</h4>
