@@ -93,8 +93,44 @@ demo_disappear.children[1].style.display = "none";
 
 
 }
-function show(){
-  showComment1();
-  showComment();
+
+function storesuggestion() {
+  var _mail= document.getElementById("mail").value;
+  var _suggestion= document.getElementById("suggestion").value;
+  var res = _mail.split(".", 1);
+   firebase.database().ref('User/'+'to_admin/'+res).set({
+          mail : _mail,
+          suggestion : _suggestion
+        }, function(error) {
+          if (error) {
+            alert('Error Occured');
+          } else {
+              alert("Sent");
+            console.log('Hoise');
+         
+          }
+        });
+} 
+function show() {
+
+  firebase.database().ref('User/'+'to_admin/').once('value').then(function (snapshot) {
+    snapshot.forEach(function (child) {
+      let dc = document.getElementById("comm").cloneNode(true);
+      dc.children[0].children[0].innerHTML = child.val().mail;
+      dc.children[0].children[1].innerHTML = child.val().suggestion;
+      document.getElementById('blog-comments').appendChild(dc);
+      dc.style.display = "block";
+    });
   
-}
+  }, function (error) {
+    if (error) {
+    } else {
+      
+    }
+  });
+  
+  let demo_disappear = document.getElementById("blog-comments");
+  demo_disappear.children[1].style.display = "none";
+  
+  
+  }
